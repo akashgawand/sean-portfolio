@@ -4,25 +4,25 @@ import { ArrowUpRight } from "lucide-react";
 export default function AmbitiousOnes() {
   const cards = [
     {
-      title: "Entrepreneurs Ready to Scale",
+      title: "Retail Investors",
       description:
-        "Become the person capable of building a business that runs without you.",
+        "Access advanced, AI-driven algorithmic trading to preserve capital and grow your wealth autonomously.",
       image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2940&auto=format&fit=crop",
     },
     {
-      title: "AI Founders",
+      title: "Tech Innovators",
       description:
-        "Launch and scale your AI-driven software backed by a venture studio.",
+        "Build, scale, and optimize your data and technology companies for high-value multi-million dollar exits.",
       image:
         "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2940&auto=format&fit=crop",
     },
     {
-      title: "Young Adults",
+      title: "Real Estate Developers",
       description:
-        "Free events for 13-22 year olds ready to level up, lead, and build a business.",
+        "Generate massive returns through strategic property development, flipping, and systematic portfolio management.",
       image:
-        "https://images.unsplash.com/photo-1758599543308-b09f54d48960?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop",
     },
   ];
 
@@ -39,10 +39,10 @@ export default function AmbitiousOnes() {
       <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-center">
         {/* Header Section */}
         <h2 className="text-5xl md:text-7xl font-bold text-white uppercase tracking-wider mb-4 text-center">
-          FOR THE AMBITIOUS ONES...
+          FOR THE SYSTEMATIC BUILDERS...
         </h2>
         <p className="text-[#00c3ff] font-bold text-lg md:text-xl tracking-tight mb-16 text-center">
-          ...who KNOW they're meant for more.
+          ...who prioritize capital preservation and aggressive scaling.
         </p>
 
         {/* Cards Grid */}
