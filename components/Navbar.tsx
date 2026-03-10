@@ -40,12 +40,14 @@ export default function Navbar() {
         <Link href="#" className="hover:text-white transition-colors">
           Careers
         </Link>
-        <Link href="#" className="hover:text-white transition-colors">
+        <Link href="/subscribe" className="hover:text-white transition-colors">
           Subscribe
         </Link>
-        <button className="bg-[#00c3ff] hover:bg-[#00aadd] text-white px-6 py-2.5 rounded-full font-bold ml-2 transition-colors">
-          Work with Me
-        </button>
+        <Link href="/message">
+          <button className="bg-[#00c3ff] hover:bg-[#00aadd] text-white px-6 py-2.5 rounded-full font-bold ml-2 transition-colors">
+            Work with Me
+          </button>
+        </Link>
       </nav>
     </header>
   );
