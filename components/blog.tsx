@@ -26,7 +26,7 @@ export default function Blog() {
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-sm text-gray-300 text-xs font-bold px-3 py-1 uppercase rounded-full border border-white/10">
+              <div className="absolute top-4 right-4 bg-black/60 text-gray-300 text-xs font-bold px-3 py-1 uppercase rounded-full border border-white/10">
                 Business
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function Blog() {
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-sm text-gray-300 text-xs font-bold px-3 py-1 uppercase rounded-full border border-white/10">
+              <div className="absolute top-4 right-4 bg-black/60 text-gray-300 text-xs font-bold px-3 py-1 uppercase rounded-full border border-white/10">
                 AI
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function Blog() {
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-sm text-gray-300 text-xs font-bold px-3 py-1 uppercase rounded-full border border-white/10">
+              <div className="absolute top-4 right-4 bg-black/60 text-gray-300 text-xs font-bold px-3 py-1 uppercase rounded-full border border-white/10">
                 Business
               </div>
             </div>

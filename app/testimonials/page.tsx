@@ -91,12 +91,12 @@ export default function TestimonialsPage() {
 
                     {/* Top Right UI Overlay (Fake browser/menu icons from screenshot) */}
                     <div className="absolute top-2 right-2 flex gap-1 z-10 opacity-70">
-                       <div className="w-6 h-6 bg-black/50 backdrop-blur-sm rounded flex items-center justify-center text-white text-[10px]">::</div>
+                       <div className="w-6 h-6 bg-black/50  rounded flex items-center justify-center text-white text-[10px]">::</div>
                     </div>
 
                     {/* Play Button Center Overlay */}
                     <div className="absolute inset-0 flex items-center justify-center z-10">
-                      <div className="w-12 h-10 bg-black/80 backdrop-blur-sm rounded flex items-center justify-center border border-white/10 group-hover:bg-[#00c3ff]/90 group-hover:border-transparent transition-all">
+                      <div className="w-12 h-10 bg-black/80  rounded flex items-center justify-center border border-white/10 group-hover:bg-[#00c3ff]/90 group-hover:border-transparent transition-all">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 3L19 12L5 21V3Z" />
                         </svg>

@@ -56,7 +56,7 @@ export default function ParallaxContent() {
               {/* YOUR EXACT CONTENT BLOCK */}
               <section className="min-h-screen max-w-7xl mx-auto px-6 lg:px-12 flex flex-col justify-center py-20">
                 {/* Premium Glassmorphism Content Box */}
-                <div className="max-w-2xl bg-black/30 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl transform transition-transform hover:scale-[1.01] duration-500">
+                <div className="max-w-2xl bg-black/30 p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl transform transition-transform hover:scale-[1.01] duration-500">
                   <h2 className="text-5xl md:text-7xl font-extrabold mb-8 uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
                     Sean Beaman
                   </h2>
@@ -190,7 +190,7 @@ export default function ParallaxContent() {
                 {/* SCALING WRAPPER */}
                 <div className="transform scale-[0.65] sm:scale-75 md:scale-90 lg:scale-100 origin-center lg:origin-right flex justify-center items-center z-10">
                   {/* Ultra-polished Glass Container */}
-                  <div className="relative w-[350px] h-[480px] bg-gradient-to-b from-white/[0.06] to-transparent backdrop-blur-md rounded-2xl flex flex-col justify-center items-center p-8 shadow-2xl border border-white/10 overflow-hidden">
+                  <div className="relative w-[350px] h-[480px] bg-gradient-to-b from-white/[0.06] to-transparent rounded-2xl flex flex-col justify-center items-center p-8 shadow-2xl border border-white/10 overflow-hidden">
                     {/* Subtle top edge highlight to mimic thick glass reflection */}
                     <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
 
@@ -423,7 +423,7 @@ export default function ParallaxContent() {
 
        
         <div className="relative z-10 w-full -mt-[100vh] h-[80vh] max-w-7xl mx-auto px-6 lg:px-12 flex flex-col justify-center">
-          <div className="max-w-2xl bg-black/30 backdrop-blur-md p-10 rounded-3xl border border-white/10 shadow-2xl transform transition-transform hover:scale-[1.02] duration-500">
+          <div className="max-w-2xl bg-black/30 p-10 rounded-3xl border border-white/10 shadow-2xl transform transition-transform hover:scale-[1.02] duration-500">
             <p className="text-[#0ea5e9] font-bold tracking-wider text-sm uppercase mb-4">
               Speaking
             </p>
