@@ -30,18 +30,17 @@ export default function Hero() {
           className="max-w-3xl"
         >
           <p className="text-[#00c3ff] font-bold text-xl md:text-2xl mb-4  tracking-tight">
-            Author, entrepreneur, coach and...
+            Entrepreneur, investor, and CEO...
           </p>
 
           <h1 className="text-6xl md:text-[80px] lg:text-[100px] font-black uppercase  text-white leading-[0.9] mb-6 ">
-            HUMANITY'S BIGGEST
+            SEAN
             <br />
-            CHEERLEADER.
+            BEAMAN.
           </h1>
 
           <p className="text-xl md:text-2xl text-white font-bold max-w-xl leading-snug ">
-            You have what it takes. Stop playing small and start building your
-            dream empire.
+            Over 30 years scaling businesses, generating $250M+ in exits, and building the future of algorithmic fintech.
           </p>
         </motion.div>
       </div>

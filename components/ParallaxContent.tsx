@@ -43,7 +43,7 @@ export default function ParallaxContent() {
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent z-10" />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30 z-10" />
               <Image
-                src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=2000&auto=format&fit=crop"
+                src="/seanbeamanNew2.png"
                 alt="Family Background"
                 fill
                 className="object-cover object-center transform scale-105"
