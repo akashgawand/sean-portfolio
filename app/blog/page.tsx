@@ -103,7 +103,7 @@ export default function BlogPage() {
               {/* Card Image */}
               <Link href={post.link} className="relative w-full aspect-[16/10] overflow-hidden bg-gray-200 block">
                 {/* Category Badge */}
-                <div className="absolute top-4 right-4 z-10 bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                <div className="absolute top-4 right-4 z-10 bg-black/60 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
                   {post.category}
                 </div>
                 <Image 
