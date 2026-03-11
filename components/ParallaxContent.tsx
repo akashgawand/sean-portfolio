@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Blog from "./blog";
+ import { motion } from "framer-motion";
 
 export default function ParallaxContent() {
   return (
@@ -180,43 +181,147 @@ export default function ParallaxContent() {
                   Explore Gemalgo
                 </button>
               </div>
-
               {/* Mock Book Cover Side */}
-              <div className="relative flex justify-center lg:justify-end items-center mt-4 lg:mt-0">
-                {/* SCALING WRAPPER: 
-              Scales the book down on mobile/tablets so it perfectly fits inside the 80vh container alongside the text 
-            */}
-                <div className="transform scale-[0.65] sm:scale-75 md:scale-90 lg:scale-100 origin-center lg:origin-right">
-                  <div className="relative w-[350px] h-[480px] bg-gradient-to-br from-[#0ea5e9] to-[#0284c7] rotate-[-5deg] rounded-l-3xl rounded-r-md z-10 flex flex-col p-8 transition-transform duration-700 group-hover:-translate-y-4 group-hover:-rotate-2 shadow-2xl">
-                    <p className="text-white/90 text-xs font-semibold mb-2 tracking-wide">
-                      CAPITAL PRESERVATION ENGINE
-                    </p>
-                    <h4 className="text-white text-xl font-bold tracking-widest">
-                      SEAN BEAMAN
-                    </h4>
-                    <div className="mt-8">
-                      <h2 className="text-white text-[56px] leading-[0.85] font-black uppercase drop-shadow-lg">
-                        GEM
-                        <br />
-                        ALGO
-                      </h2>
-                    </div>
-                    <div className="absolute bottom-8 left-8 right-8">
-                      <p className="text-white/90 text-xs font-semibold uppercase text-center leading-relaxed">
-                        Preserve Capital First. Automate Your Wealth.
-                      </p>
-                    </div>
-                    {/* Gold seal */}
-                    <div className="absolute right-[-20px] top-[120px] w-24 h-24 bg-gradient-to-br from-[#0ea5e9] to-blue-600 rounded-full flex items-center justify-center text-center p-2 shadow-xl border-2 border-blue-400 transform rotate-15">
-                      <p className="text-white text-[10px] font-black leading-tight uppercase drop-shadow-sm">
-                        Fintech
-                        <br />
-                        Revolution
-                        <br />
-                        <br />
-                        Est. 2024
-                      </p>
-                    </div>
+
+              <div className="relative flex justify-center lg:justify-end items-center mt-4 lg:mt-0 group">
+                {/* Ambient Backlight Glow: Adds depth and separates the card from the background */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[380px] bg-sky-500/20 blur-[80px] rounded-full pointer-events-none transition-opacity duration-700 opacity-60 group-hover:opacity-100" />
+
+                {/* SCALING WRAPPER */}
+                <div className="transform scale-[0.65] sm:scale-75 md:scale-90 lg:scale-100 origin-center lg:origin-right flex justify-center items-center z-10">
+                  {/* Ultra-polished Glass Container */}
+                  <div className="relative w-[350px] h-[480px] bg-gradient-to-b from-white/[0.06] to-transparent backdrop-blur-md rounded-2xl flex flex-col justify-center items-center p-8 shadow-2xl border border-white/10 overflow-hidden">
+                    {/* Subtle top edge highlight to mimic thick glass reflection */}
+                    <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
+
+                    {/* SVG Growth Chart */}
+                    <svg
+                      viewBox="0 0 100 100"
+                      className="w-full h-full overflow-visible"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      {/* Faint Inner Grid Lines for a technical aesthetic */}
+                      <g
+                        stroke="rgba(255,255,255,0.04)"
+                        strokeWidth="0.5"
+                        strokeDasharray="2 2"
+                      >
+                        <line x1="10" y1="36.6" x2="90" y2="36.6" />
+                        <line x1="10" y1="63.3" x2="90" y2="63.3" />
+                        <line x1="36.6" y1="10" x2="36.6" y2="90" />
+                        <line x1="63.3" y1="10" x2="63.3" y2="90" />
+                      </g>
+
+                      {/* Base X/Y Axes */}
+                      <path
+                        d="M10 90 L90 90"
+                        stroke="rgba(255,255,255,0.15)"
+                        strokeWidth="1"
+                        strokeLinecap="round"
+                      />
+                      <path
+                        d="M10 10 L10 90"
+                        stroke="rgba(255,255,255,0.15)"
+                        strokeWidth="1"
+                        strokeLinecap="round"
+                      />
+
+                      {/* Fading Area Gradient under the line */}
+                      <motion.path
+                        d="M 10 90 L 30 75 L 45 80 L 65 40 L 75 50 L 90 20 L 90 90 Z"
+                        fill="url(#area-gradient)"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{
+                          duration: 1.5,
+                          delay: 0.6,
+                          ease: "easeOut",
+                        }}
+                        viewport={{ once: true }}
+                      />
+
+                      {/* The main stock chart line */}
+                      <motion.path
+                        d="M 10 90 L 30 75 L 45 80 L 65 40 L 75 50 L 90 20"
+                        stroke="url(#chart-gradient)"
+                        strokeWidth="3.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="drop-shadow-[0_0_10px_rgba(14,165,233,0.8)]"
+                        initial={{ pathLength: 0, opacity: 0 }}
+                        whileInView={{ pathLength: 1, opacity: 1 }}
+                        transition={{ duration: 2, ease: "easeInOut" }}
+                        viewport={{ once: true }}
+                      />
+
+                      {/* Enhanced Glowing Dot */}
+                      <motion.g
+                        initial={{ scale: 0, opacity: 0 }}
+                        whileInView={{ scale: 1, opacity: 1 }}
+                        transition={{
+                          delay: 1.8,
+                          duration: 0.5,
+                          type: "spring",
+                          bounce: 0.5,
+                        }}
+                        viewport={{ once: true }}
+                      >
+                        {/* Outer pulsing ring */}
+                        <circle
+                          cx="90"
+                          cy="20"
+                          r="7"
+                          fill="#0ea5e9"
+                          opacity="0.3"
+                          className="animate-pulse"
+                        />
+                        {/* Inner solid white dot */}
+                        <circle
+                          cx="90"
+                          cy="20"
+                          r="3"
+                          fill="#ffffff"
+                          className="drop-shadow-[0_0_8px_rgba(255,255,255,1)]"
+                        />
+                      </motion.g>
+
+                      <defs>
+                        {/* Line Gradient: Sky blue to a slightly cooler indigo tone for luxury */}
+                        <linearGradient
+                          id="chart-gradient"
+                          x1="10"
+                          y1="90"
+                          x2="90"
+                          y2="20"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0%" stopColor="#38bdf8" />
+                          <stop offset="100%" stopColor="#818cf8" />
+                        </linearGradient>
+
+                        {/* Area Gradient: Fades from semi-transparent blue to fully transparent at the bottom */}
+                        <linearGradient
+                          id="area-gradient"
+                          x1="0"
+                          y1="20"
+                          x2="0"
+                          y2="90"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop
+                            offset="0%"
+                            stopColor="#0ea5e9"
+                            stopOpacity="0.25"
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor="#0ea5e9"
+                            stopOpacity="0.0"
+                          />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -303,7 +408,6 @@ export default function ParallaxContent() {
         </div>
       </div>
 
-    
       {/* 5. SPEAKING SECTION (Sticky BG, Scrolling Text) */}
       {/* <section className="relative w-full z-0 bg-black">
        

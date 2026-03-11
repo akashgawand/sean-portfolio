@@ -32,9 +32,6 @@ export default function Navbar() {
           Events
         </Link>
         <Link href="#" className="hover:text-white transition-colors">
-          Books
-        </Link>
-        <Link href="#" className="hover:text-white transition-colors">
           About
         </Link>
         <Link href="#" className="hover:text-white transition-colors">
