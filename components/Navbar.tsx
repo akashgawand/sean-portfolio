@@ -25,18 +25,24 @@ export default function Navbar() {
 
       {/* Desktop Nav */}
       <nav className="hidden lg:flex items-center gap-6 font-bold text-sm tracking-tight text-white/90">
-        <Link href="#" className="hover:text-white transition-colors">
+        <Link href="/" className="hover:text-white transition-colors">
           What I Do
         </Link>
-        <Link href="#" className="hover:text-white transition-colors">
+        {/*  <Link href="#" className="hover:text-white transition-colors">
           Events
-        </Link>
-        <Link href="#" className="hover:text-white transition-colors">
+        </Link>  */}
+         <Link href="/blog" className="hover:text-white transition-colors">
+          Blogs
+        </Link> 
+        <Link href="/testimonials" className="hover:text-white transition-colors">
+          Testimonials
+        </Link> 
+        <Link href="/about" className="hover:text-white transition-colors">
           About
         </Link>
-        <Link href="#" className="hover:text-white transition-colors">
+       {/*  <Link href="#" className="hover:text-white transition-colors">
           Careers
-        </Link>
+        </Link> */}
         <Link href="/subscribe" className="hover:text-white transition-colors">
           Subscribe
         </Link>
