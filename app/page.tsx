@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import AmbitiousOnes from "@/components/AmbitiousOnes";
 import ParallaxContent from "@/components/ParallaxContent";
+import Gallary from "@/components/gallary";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <AmbitiousOnes />
       <ParallaxContent />
+      <Gallary />
     </main>
   );
 }
