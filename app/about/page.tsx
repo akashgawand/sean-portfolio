@@ -7,7 +7,7 @@ export default function AboutPage() {
       {/* Hero Image Section */}
       <section className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh]">
         <Image 
-          src="/seanbeamanNew.png" 
+          src="/seanbeamanNew12.png" 
           alt="Sean Beaman" 
           layout="fill" 
           objectFit="cover" 
