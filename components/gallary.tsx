@@ -11,15 +11,15 @@ const images = [
   },
   { src: "/seanbeaman.webp", alt: "Sean Beaman Speaking" },
   {
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800",
+    src: "/seangemalgo.webp",
     alt: "Team Collaboration",
   },
   {
-    src: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
+    src: "/leadership.webp",
     alt: "Entrepreneurship",
   },
   {
-    src: "/image.png",
+    src: "/working.webp",
     alt: "City Overview",
   },
 ];
