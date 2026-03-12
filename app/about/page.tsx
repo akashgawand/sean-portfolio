@@ -7,7 +7,7 @@ export default function AboutPage() {
       {/* Hero Image Section */}
       <section className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh]">
         <Image 
-          src="/AboutSean.png" 
+          src="/seanbeamanNew.png" 
           alt="Sean Beaman" 
           layout="fill" 
           objectFit="cover" 
@@ -154,7 +154,7 @@ export default function AboutPage() {
                 <Image src="/seanBuisness.png" alt="Fintech Pivot" layout="fill" objectFit="cover" objectPosition="center" />
               </div>
               <div className="relative w-full aspect-video md:aspect-[16/10] rounded-2xl overflow-hidden bg-gray-200">
-                 <Image src="/seanbeamanNew1.png" alt="Gemalgo Creation" layout="fill" objectFit="cover" objectPosition="center" />
+                 <Image src="/seanbeamanNew12.png" alt="Gemalgo Creation" layout="fill" objectFit="cover" objectPosition="center" />
               </div>
             </div>
 
@@ -197,8 +197,8 @@ export default function AboutPage() {
               <div className="relative w-full aspect-video md:aspect-[16/10] rounded-2xl overflow-hidden bg-gray-200">
                 <Image src="/image.png" alt="Platform UI" layout="fill" objectFit="cover" objectPosition="center" />
               </div>
-              <div className="relative w-full aspect-video md:aspect-[16/10] rounded-2xl overflow-hidden bg-gray-200">
-                <Image src="/AboutSean.png" alt="Mission Vision" layout="fill" objectFit="cover" objectPosition="center" />
+              <div className="relative w-full aspect-video md:aspect-[16/9] rounded-2xl overflow-hidden bg-gray-200">
+                <Image src="/AboutSean.png" alt="Mission Vision" layout="fill" objectFit="cover" objectPosition="top" />
               </div>
             </div>
           </div>
