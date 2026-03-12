@@ -7,7 +7,7 @@ export default function AboutPage() {
       {/* Hero Image Section */}
       <section className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh]">
         <Image 
-          src="/AboutSean.png" 
+          src="/seanbeamanNew.png" 
           alt="Sean Beaman" 
           layout="fill" 
           objectFit="cover" 
@@ -121,11 +121,11 @@ export default function AboutPage() {
           <div className="lg:col-span-6 flex flex-col gap-6 pt-4">
             <div className="relative w-full aspect-video md:aspect-[4/3] rounded-2xl overflow-hidden bg-gray-900 border border-gray-800">
                <Image 
-                src="/seanbeaman.webp" 
+                src="/seangemalgo.webp" 
                 alt="Early Days" 
                 layout="fill"
                 objectFit="cover"
-                objectPosition="center"
+                objectPosition="top"
               />
             </div>
             <div className="relative w-full aspect-video md:aspect-[4/3] rounded-2xl overflow-hidden bg-gray-900 border border-gray-800">
@@ -151,10 +151,10 @@ export default function AboutPage() {
             {/* Left Column - Images */}
             <div className="lg:col-span-5 xl:col-span-6 flex flex-col gap-4 sm:gap-6">
               <div className="relative w-full aspect-video md:aspect-[16/10] rounded-2xl overflow-hidden bg-gray-200">
-                <Image src="/seanBuisness.png" alt="Fintech Pivot" layout="fill" objectFit="cover" objectPosition="center" />
+                <Image src="/seanBuisness.png" alt="Fintech Pivot" layout="fill" objectFit="cover" objectPosition="top" />
               </div>
               <div className="relative w-full aspect-video md:aspect-[16/10] rounded-2xl overflow-hidden bg-gray-200">
-                 <Image src="/seanbeamanNew1.png" alt="Gemalgo Creation" layout="fill" objectFit="cover" objectPosition="center" />
+                 <Image src="/seanbeamanNew12.png" alt="Gemalgo Creation" layout="fill" objectFit="cover" objectPosition="center" />
               </div>
             </div>
 
@@ -195,10 +195,10 @@ export default function AboutPage() {
             {/* Right Column - Images */}
             <div className="lg:col-span-5 xl:col-span-6 flex flex-col gap-4 sm:gap-6 order-1 lg:order-2">
               <div className="relative w-full aspect-video md:aspect-[16/10] rounded-2xl overflow-hidden bg-gray-200">
-                <Image src="/image.png" alt="Platform UI" layout="fill" objectFit="cover" objectPosition="center" />
+                <Image src="/image.png" alt="Platform UI" layout="fill" objectFit="cover" objectPosition="top" />
               </div>
-              <div className="relative w-full aspect-video md:aspect-[16/10] rounded-2xl overflow-hidden bg-gray-200">
-                <Image src="/AboutSean.png" alt="Mission Vision" layout="fill" objectFit="cover" objectPosition="center" />
+              <div className="relative w-full aspect-video md:aspect-[16/9] rounded-2xl overflow-hidden bg-gray-200">
+                <Image src="/working.webp" alt="Mission Vision" layout="fill" objectFit="cover" objectPosition="top" />
               </div>
             </div>
           </div>

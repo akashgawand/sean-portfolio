@@ -72,21 +72,21 @@ export default function TestimonialsPage() {
             {/* Video Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 w-full">
               {[
-                { name: "Damian Tenuta", time: "01:57", img: "/seanbeaman.webp" },
-                { name: "Amy Landino", time: "08:49", img: "/AboutSean1.jpg" },
-                { name: "Stephan Dyer", time: "03:18", img: "/seanBuisness.png" },
-                { name: "Charles Mullany", time: "01:43", img: "/image.png" },
-                { name: "Jackie Serviss", time: "00:58", img: "/seanbeamanNew1.png" },
-                { name: "Dan Harrison", time: "00:50", img: "/AboutSean.png" },
+                { name: "Damian Tenuta", time: "01:57", img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80" },
+                { name: "Amy Landino", time: "08:49", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80" },
+                { name: "Stephan Dyer", time: "03:18", img: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=800&q=80" },
+                { name: "Charles Mullany", time: "01:43", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" },
+                { name: "Jackie Serviss", time: "00:58", img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80" },
+                { name: "Dan Harrison", time: "00:50", img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80" },
               ].map((video, idx) => (
                 <div key={idx} className="flex flex-col items-center group cursor-pointer">
                   
                   {/* Video Thumbnail Wrapper */}
                   <div className="relative w-full aspect-[9/16] bg-[#111] rounded-2xl overflow-hidden shadow-lg border border-gray-800 transition-transform duration-300 group-hover:-translate-y-2 group-hover:shadow-[0_10px_30px_rgba(0,195,255,0.2)]">
                     
-                    {/* Placeholder Thumbnail (using available images) */}
+                    {/* Placeholder Thumbnail */}
                     <div className="absolute inset-0 opacity-80 group-hover:opacity-100 transition-opacity">
-                       <Image src={video.img} alt={video.name} layout="fill" objectFit="cover" objectPosition="center top" />
+                       <img src={video.img} alt={video.name} className="w-full h-full object-cover object-top" />
                     </div>
 
                     {/* Top Right UI Overlay (Fake browser/menu icons from screenshot) */}

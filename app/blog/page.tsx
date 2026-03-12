@@ -149,14 +149,14 @@ export default function BlogPage() {
         </div>
 
         {/* Pagination Placeholder */}
-        <div className="flex justify-center items-center mt-16 md:mt-24 gap-2 md:gap-3 text-[14px] sm:text-[15px] font-medium text-gray-700">
+        {/* <div className="flex justify-center items-center mt-16 md:mt-24 gap-2 md:gap-3 text-[14px] sm:text-[15px] font-medium text-gray-700">
           <Link href="#" className="hover:text-black hover:underline underline-offset-4 mr-2">&laquo; Previous</Link>
           <Link href="#" className="w-8 h-8 flex items-center justify-center text-[#00c3ff] font-bold">1</Link>
           {[2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
              <Link key={num} href="#" className="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded transition-colors hidden sm:flex">{num}</Link>
           ))}
           <Link href="#" className="hover:text-black hover:underline underline-offset-4 ml-2">Next &raquo;</Link>
-        </div>
+        </div> */}
 
       </section>
     </main>
