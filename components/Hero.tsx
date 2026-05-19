@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen min-h-[700px] flex flex-col overflow-hidden bg-black">
+    <section className="relative w-full h-screen min-h-[600px] md:min-h-[700px] flex flex-col overflow-hidden bg-black">
       {/* Background Image Layer */}
       <div className="absolute right-0 w-full md:w-[75%] lg:w-[60%] h-full z-0">
         <Image
@@ -14,32 +14,35 @@ export default function Hero() {
           alt="Entrepreneur Portrait"
           fill
           priority
-          className="object-cover object-right grayscale-10 opacity-70 border-none"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 75vw, 60vw"
+          className="object-cover object-top md:object-right grayscale-10 opacity-80 md:opacity-70 border-none"
         />
         {/* Gradient overlays to blend the left side into black */}
         <div className="absolute inset-0 bg-linear-to-r from-black via-black/10 to-transparent w-full z-10" />
+        {/* Extra mobile-only darkening behind the text area (bottom-left) — keeps face/top of image visible */}
+        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent md:hidden w-full z-10" />
         {/* <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent h-1/3 bottom-0 top-auto z-10" /> */}
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 flex-1 flex flex-col justify-center pb-32">
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 flex-1 flex flex-col justify-center pb-24 md:pb-32">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-3xl"
         >
-          <p className="text-[#00c3ff] font-bold text-xl md:text-2xl mb-4  tracking-tight">
+          <p className="text-[#00c3ff] font-bold text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4 tracking-tight">
             Entrepreneur, investor, and CEO...
           </p>
 
-          <h1 className="text-6xl md:text-[80px] lg:text-[100px] font-black uppercase  text-white leading-[0.9] mb-6 ">
+          <h1 className="text-5xl sm:text-6xl md:text-[80px] lg:text-[100px] font-black uppercase text-white leading-[0.9] mb-4 sm:mb-6">
             SEAN
             <br />
             BEAMAN.
           </h1>
 
-          <p className="text-xl md:text-2xl text-white font-bold max-w-xl leading-snug ">
+          <p className="text-base sm:text-xl md:text-2xl text-white font-bold max-w-xl leading-snug">
             Over 30 years scaling businesses, generating $250M+ in exits, and building the future of algorithmic fintech.
           </p>
         </motion.div>
