@@ -9,33 +9,34 @@ export default function TestimonialsPage() {
         {/* Background Image - Changed to fixed for parallax/fixed effect */}
         <div className="fixed inset-0 z-0">
           <div className="absolute inset-0 md:left-[20%] lg:left-[30%]">
-            <Image 
-              src="/testimonials.png" 
-              alt="Testimonials Banner" 
-              layout="fill" 
-              objectFit="cover" 
-              objectPosition="left center"
+            <Image
+              src="/testimonials.png"
+              alt="Testimonials Banner"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center top"
               priority
-              className="opacity-90"
+              className="opacity-90 md:object-[left_center]"
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#000000] via-[#000000]/90 to-transparent z-10 md:w-[70%]"></div>
+          {/* Mobile: vertical gradient (image on top, text overlays bottom). md+: horizontal gradient. */}
+          <div className="absolute inset-0 bg-linear-to-b md:bg-linear-to-r from-transparent via-[#000000]/70 to-[#000000] md:from-[#000000] md:via-[#000000]/90 md:to-transparent z-10 md:w-[70%]"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
         </div>
 
         {/* Hero Content Overlay */}
-        <div className="relative z-20 w-full max-w-[85rem] mx-auto px-6 sm:px-12 lg:px-20 mt-16 md:mt-0">
+        <div className="relative z-20 w-full max-w-[85rem] mx-auto px-4 sm:px-8 md:px-12 lg:px-20 mt-12 sm:mt-16 md:mt-0">
           <div className="max-w-[32rem]">
-            
-            <p className="text-[#00c3ff] font-bold text-[18px] md:text-[22px] mb-3 md:mb-5 tracking-tight">
+
+            <p className="text-[#00c3ff] font-bold text-[15px] sm:text-[18px] md:text-[22px] mb-2 sm:mb-3 md:mb-5 tracking-tight">
               Our clients are crushing it
             </p>
-            
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem]uppercase text-white drop-shadow-lg mb-6 ">
+
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] uppercase text-white drop-shadow-lg mb-4 sm:mb-6 wrap-break-word">
               TESTIMONIALS
             </h1>
-            
-            <div className="space-y-4 md:space-y-5 text-[#b0b0b0] font-medium text-[15px] sm:text-[17px] md:text-[19px] leading-[1.5]">
+
+            <div className="space-y-3 sm:space-y-4 md:space-y-5 text-[#b0b0b0] font-medium text-[14px] sm:text-[16px] md:text-[19px] leading-normal">
               <p>
                 <span className="text-white font-bold">Winning entrepreneurs do business differently:</span> They default to action, take the chance, and bet on themselves.
               </p>
@@ -54,18 +55,18 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Video Testimonials Section */}
-      <section className="relative z-20 w-full bg-[#000000] pt-24 pb-32">
-        
+      <section className="relative z-20 w-full bg-[#000000] pt-12 sm:pt-16 md:pt-24 pb-16 sm:pb-24 md:pb-32">
+
         {/* Top Gradient to transition smoothly from the fixed hero if needed */}
         <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-[#000000] -translate-y-full pointer-events-none hidden"></div>
 
-        <div className="max-w-[85rem] mx-auto px-6 sm:px-8 lg:px-12 flex flex-col items-center">
-            
+        <div className="max-w-[85rem] mx-auto px-4 sm:px-8 lg:px-12 flex flex-col items-center">
+
             {/* Header */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase text-white mb-4 text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-black uppercase text-white mb-3 sm:mb-4 text-center wrap-break-word">
               BUT DON&apos;T LISTEN TO ME...
             </h2>
-            <p className="text-[#00c3ff] font-bold text-[16px] md:text-[18px] mb-12 md:mb-16 tracking-wide text-center">
+            <p className="text-[#00c3ff] font-bold text-[14px] sm:text-[16px] md:text-[18px] mb-8 sm:mb-12 md:mb-16 tracking-wide text-center">
               Just look at the results.
             </p>
 

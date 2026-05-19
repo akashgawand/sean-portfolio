@@ -98,9 +98,9 @@ export default function Footer() {
             © {new Date().getFullYear()} Sean Beaman. All Rights Reserved
           </p>
           <div className="flex items-center gap-3 text-sm">
-            <a href="#" className="font-bold text-white hover:text-gray-300 transition-colors">Careers</a>
+            <a href="" className="font-bold text-white hover:text-gray-300 transition-colors">Careers</a>
             <span className="text-gray-500">|</span>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/terms-privacy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
           </div>
         </div>
       </div>

@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export default function TermsPrivacyPage() {
   return (
-    <main className="min-h-screen bg-[#000000] text-white font-sans selection:bg-[#00c3ff] selection:text-white px-6 py-12 md:px-12 lg:px-24 md:py-20 lg:py-28">
+    <main className="min-h-screen bg-[#000000] text-white font-sans selection:bg-[#00c3ff] selection:text-white px-4 sm:px-6 py-8 sm:py-12 md:px-12 lg:px-24 md:py-20 lg:py-28">
       <div className=" max-w-[75rem] mx-auto w-full">
-        
+
         {/* PRIVACY POLICY SECTION */}
-        <section className="mt-20 mb-16">
-          <h1 className="text-3xl md:text-5xl lg:text-[3.5rem] font-black uppercase tracking-[0.1rem] text-[#e0e0e0] drop-shadow-md mb-8">
+        <section className="mt-10 sm:mt-16 md:mt-20 mb-10 sm:mb-16">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-[3.5rem] font-black uppercase tracking-wider sm:tracking-[0.1rem] text-[#e0e0e0] drop-shadow-md mb-6 sm:mb-8 wrap-break-word">
             PRIVACY POLICY
           </h1>
-          <p className="text-[#a0a0a0] text-sm md:text-[15px] font-medium mb-10 tracking-wide">
+          <p className="text-[#a0a0a0] text-xs sm:text-sm md:text-[15px] font-medium mb-6 sm:mb-10 tracking-wide">
             Effective Date: February 19, 2026
           </p>
           
@@ -28,8 +28,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* SMS SECTION */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-4xl lg:text-[2.8rem] font-black uppercase tracking-[0.1rem] text-[#e0e0e0] drop-shadow-md mb-8">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-[2.8rem] font-black uppercase tracking-wider sm:tracking-[0.1rem] text-[#e0e0e0] drop-shadow-md mb-6 sm:mb-8 wrap-break-word">
             SMS AND MOBILE INFORMATION PRIVACY
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-bold space-y-6 max-w-[65rem]">
@@ -54,8 +54,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* HOW WE COLLECT INFO */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-4xl lg:text-[2.8rem] font-black uppercase tracking-[0.1rem] text-[#e0e0e0] drop-shadow-md mb-8">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-[2.8rem] font-black uppercase tracking-wider sm:tracking-[0.1rem] text-[#e0e0e0] drop-shadow-md mb-6 sm:mb-8 wrap-break-word">
             How We Collect and Use Information
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -78,8 +78,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* THIRD-PARTY SERVICE PROVIDERS */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             Categories of Third-Party Service Providers
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -105,8 +105,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* DATA RETENTION */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             Data Retention
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -126,8 +126,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* THIRD-PARTY ADVERTISERS */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             Third-Party Advertisers and Ad Servers
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -141,8 +141,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* GOOGLE ANALYTICS */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             Google Analytics
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -163,8 +163,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* FACEBOOK */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             Facebook
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -182,8 +182,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* GDPR */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             General Data Protection Regulation (GDPR)
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -201,8 +201,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* CPRA */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
            California Privacy Rights Act (CPRA)
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -220,8 +220,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* PIPEDA */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             Personal Information Protection and Electronic Documents Act (PIPEDA)
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -241,8 +241,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* CHILDREN'S PRIVACY STATEMENT */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             Children&apos;s Privacy Statement
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -259,8 +259,8 @@ export default function TermsPrivacyPage() {
         </section>
 
          {/* CASL */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             Canada&apos;s Anti-Spam Legislation (CASL)
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -274,8 +274,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* DATA SECURITY */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             Data Security
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -286,8 +286,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* HOW WE STORE INFORMATION */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
              How We Store Your Information
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -297,8 +297,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* LEGAL DISCLOSURE */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             Legal Disclosure
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -308,8 +308,8 @@ export default function TermsPrivacyPage() {
         </section>
 
         {/* DISCLAIMER */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+        <section className="mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             Disclaimer
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-6 max-w-[65rem]">
@@ -318,8 +318,8 @@ export default function TermsPrivacyPage() {
         </section>
 
          {/* CONTACT INFORMATION */}
-         <section className="pb-16 border-t border-gray-800 pt-16">
-          <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-6">
+         <section className="pb-10 sm:pb-16 border-t border-gray-800 pt-10 sm:pt-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.2rem] font-bold tracking-wide sm:tracking-[0.05rem] text-[#e0e0e0] drop-shadow-md mb-4 sm:mb-6 wrap-break-word">
             Contact Information
           </h2>
           <div className="text-[13px] md:text-[15px] text-[#b0b0b0] leading-relaxed font-medium space-y-2 max-w-[65rem]">

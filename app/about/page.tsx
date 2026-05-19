@@ -5,28 +5,28 @@ export default function AboutPage() {
     <main className="min-h-screen bg-[#000000] text-white font-sans selection:bg-[#00c3ff] selection:text-white pb-20">
       
       {/* Hero Image Section */}
-      <section className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh]">
-        <Image 
-          src="/seanbeamanNew12.png" 
-          alt="Sean Beaman" 
-          layout="fill" 
-          objectFit="cover" 
-          objectPosition="center"
+      <section className="relative w-full h-[45vh] sm:h-[55vh] md:h-[75vh] lg:h-[85vh]">
+        <Image
+          src="/seanbeamanNew12.png"
+          alt="Sean Beaman"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center top"
           priority
-          className="opacity-90"
+          className="opacity-90 md:object-center"
         />
         {/* Gradient overlay to smoothly transition the image into the black background below */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-[#000000] via-[#000000]/40 sm:via-transparent to-transparent"></div>
         <div className="absolute inset-0 bg-[#050614]/10 mix-blend-overlay"></div>
       </section>
 
       {/* Story Section */}
-      <section className="max-w-[90rem] mx-auto px-6 sm:px-12 lg:px-20 pt-16 md:pt-24 pb-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
-          
+      <section className="max-w-[90rem] mx-auto px-4 sm:px-8 md:px-12 lg:px-20 pt-10 sm:pt-16 md:pt-24 pb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-20">
+
           {/* Left Column - Heading & Dark Image */}
-          <div className="lg:col-span-5 flex flex-col gap-10 lg:gap-14">
-            <h1 className="text-4xl sm:text-5xl lg:text-[4rem] font-black uppercase leading-[1.05]  text-white drop-shadow-md">
+          <div className="lg:col-span-5 flex flex-col gap-6 sm:gap-10 lg:gap-14">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] font-black uppercase leading-[1.05]  text-white drop-shadow-md wrap-break-word">
               HEY, I&apos;M SEAN. <br />
               <span className="text-gray-500 font-bold opacity-80">CEO OF GEMALGO.</span>
             </h1>
@@ -77,11 +77,11 @@ export default function AboutPage() {
         </div>
 
         {/* FROM STARTUPS TO MASSIVE EXITS SECTION */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 mt-16 md:mt-24 border-t border-gray-800 pt-16 md:pt-24 mb-12">
-          
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-20 mt-10 sm:mt-16 md:mt-24 border-t border-gray-800 pt-10 sm:pt-16 md:pt-24 mb-12">
+
           {/* Left Column - Heading & Story Content */}
           <div className="lg:col-span-6 flex flex-col space-y-4 sm:space-y-6 text-[15px] sm:text-[17px] text-[#b0b0b0] leading-relaxed font-medium">
-            <h2 className="text-4xl sm:text-5xl lg:text-[4rem] font-black uppercase text-[#e0e0e0] drop-shadow-md mb-4 leading-none">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] font-black uppercase text-[#e0e0e0] drop-shadow-md mb-4 leading-tight sm:leading-none wrap-break-word">
               <span className="text-gray-500 opacity-80">FROM STARTUPS TO</span> MASSIVE EXITS
             </h2>
             
@@ -143,11 +143,11 @@ export default function AboutPage() {
       </section>
 
       {/* WHITE BACKGROUND SECTIONS */}
-      <section className="w-full bg-white text-black py-20 lg:py-32 flex flex-col gap-24 lg:gap-32">
+      <section className="w-full bg-white text-black py-12 sm:py-16 md:py-20 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 lg:gap-32">
         
         {/* PIVOT TO FINTECH */}
-        <div className="max-w-[85rem] mx-auto px-6 sm:px-12 lg:px-20 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+        <div className="max-w-[85rem] mx-auto px-4 sm:px-8 md:px-12 lg:px-20 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-20 items-center">
             {/* Left Column - Images */}
             <div className="lg:col-span-5 xl:col-span-6 flex flex-col gap-4 sm:gap-6">
               <div className="relative w-full aspect-video md:aspect-[16/10] rounded-2xl overflow-hidden bg-gray-200">
@@ -160,7 +160,7 @@ export default function AboutPage() {
 
             {/* Right Column - Text */}
             <div className="lg:col-span-7 xl:col-span-6 flex flex-col space-y-5 text-[16px] sm:text-[18px] text-[#4b4b4b] leading-relaxed font-medium">
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[4rem] font-bold uppercase text-black mb-4 leading-none">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4rem] font-bold uppercase text-black mb-4 leading-tight sm:leading-none wrap-break-word">
                 <span className="text-gray-400">THE PIVOT TO<br/>FINTECH:</span> <span className="font-bold"><br/>THE CREATION<br/>OF GEMALGO</span>
               </h2>
               <p>Following my series of high-profile tech and data exits, I faced a new challenge: <strong className="text-black">capital preservation.</strong></p>
@@ -174,11 +174,11 @@ export default function AboutPage() {
         </div>
 
         {/* DEMOCRATIZING WEALTH */}
-        <div className="max-w-[85rem] mx-auto px-6 sm:px-12 lg:px-20 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+        <div className="max-w-[85rem] mx-auto px-4 sm:px-8 md:px-12 lg:px-20 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
             <div className="lg:col-span-7 xl:col-span-6 flex flex-col space-y-6 text-[16px] sm:text-[18px] text-[#4b4b4b] leading-relaxed font-medium order-2 lg:order-1">
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[4.5rem] font-bold uppercase text-black mb-4 leading-[0.95]">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4.5rem] font-bold uppercase text-black mb-4 leading-tight sm:leading-[0.95] wrap-break-word">
                 <span className="text-gray-400">DEMOCRATIZING<br/>WEALTH </span> <span className="font-bold">&<br/>SHATTERING<br/>BARRIERS</span>
               </h2>
               <div>
@@ -205,8 +205,8 @@ export default function AboutPage() {
         </div>
 
         {/* USER SECURITY */}
-        <div className="max-w-[85rem] mx-auto px-6 sm:px-12 lg:px-20 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+        <div className="max-w-[85rem] mx-auto px-4 sm:px-8 md:px-12 lg:px-20 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-20 items-center">
             {/* Left Column - Image */}
             <div className="lg:col-span-5 xl:col-span-6">
               <div className="relative w-full aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
@@ -216,7 +216,7 @@ export default function AboutPage() {
 
             {/* Right Column - Text */}
             <div className="lg:col-span-7 xl:col-span-6 flex flex-col space-y-6 text-[16px] sm:text-[18px] text-[#4b4b4b] leading-relaxed font-medium">
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[4.5rem] font-bold uppercase text-black mb-6 leading-none flex flex-row flex-wrap gap-x-3">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4.5rem] font-bold uppercase text-black mb-6 leading-tight sm:leading-none flex flex-row flex-wrap gap-x-2 sm:gap-x-3 wrap-break-word">
                 <span className="text-gray-400">UNCOMPROMISING</span> <span className="font-bold">USER</span> <span className="font-bold">SECURITY</span>
               </h2>
               <p>Reflecting my strict rules on capital preservation, Gemalgo is designed entirely around your security.</p>
