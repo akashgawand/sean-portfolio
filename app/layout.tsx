@@ -4,9 +4,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tech Entrepreneur | Vision & Execution",
+  title: "Sean Beaman | Entrepreneur. Investor. Innovator.",
   description:
     "Personal portfolio showcasing vision, achievements, and programs.",
+  icons: {
+    icon: [
+      { url: "/logo.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
 };
 
 export default function RootLayout({

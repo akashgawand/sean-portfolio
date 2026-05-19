@@ -24,14 +24,14 @@ export default function MessagePage() {
         <div className="hidden lg:block lg:w-1/2" />
 
         {/* Right side: Form Content */}
-        <div className="w-full flex items-center justify-center p-6 sm:p-12 lg:p-16 xl:p-24 bg-[#050614]/60 lg:bg-transparent min-h-screen">
-          <div className="w-full max-w-[28rem] lg:max-w-[35rem]">
+        <div className="w-full flex items-center justify-center px-4 py-8 sm:px-8 sm:py-12 md:px-12 lg:p-16 xl:p-24 bg-[#050614]/60 lg:bg-transparent min-h-screen">
+          <div className="w-full max-w-[28rem] md:max-w-lg lg:max-w-140">
             {/* Heading */}
-            <div className="mb-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-2xl xl:text-[2.8rem] font-semibold mt-10 mb-6 uppercase text-white drop-shadow-md ">
+            <div className="mt-16 sm:mt-20 md:mt-24 lg:mt-0 mb-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-2xl xl:text-[2.8rem] font-semibold mt-4 sm:mt-8 lg:mt-10 mb-4 sm:mb-6 uppercase text-white drop-shadow-md ">
                 READY TO SCALE YOUR BUSINESS?
               </h1>
-              <p className="text-[13px] sm:text-[14px] text-white leading-relaxed mb-4">
+              <p className="text-[13px] sm:text-[14px] text-white leading-relaxed mb-3 sm:mb-4">
                 If you&apos;re a business owner who wants to scale your business with
                 proven systems, strategies, and tactics, let&apos;s connect!
               </p>
@@ -40,7 +40,7 @@ export default function MessagePage() {
               </p>
             </div>
 
-            <form className="space-y-8">
+            <form className="space-y-5 sm:space-y-6 md:space-y-8">
               <div className="space-y-1">
                 <label className="block text-[13px] font-bold text-white tracking-wide">
                   First Name *

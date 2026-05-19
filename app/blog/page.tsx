@@ -73,22 +73,22 @@ export default function BlogPage() {
     <main className="min-h-screen bg-[#f8f9fa] text-[#212529] font-sans selection:bg-[#00c3ff] selection:text-white pb-20 overflow-x-hidden">
       
       {/* Dark Header Area */}
-      <section className="w-full bg-[#1a1c23] py-8 md:py-12 flex justify-center items-center">
-        <h1 className="mt-12 text-3xl md:text-5xl uppercase text-[#00c3ff] drop-shadow-md">
+      <section className="w-full bg-[#1a1c23] mt-16 sm:mt-20 md:mt-24 lg:mt-0 py-8 md:py-12 px-4 flex justify-center items-center">
+        <h1 className="mt-8 sm:mt-12 text-2xl sm:text-3xl md:text-5xl uppercase text-[#00c3ff] drop-shadow-md text-center wrap-break-word">
           RESOURCES & TOOLS
         </h1>
       </section>
 
       {/* Main Content Area */}
       <section className="max-w-[70rem] mx-auto px-4 sm:px-8 lg:px-12 pt-8 md:pt-12">
-        
+
         {/* Category Navigation */}
-        <nav className="flex flex-wrap justify-center gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-3 mb-10 md:mb-16">
+        <nav className="flex flex-wrap justify-center gap-x-3 sm:gap-x-6 md:gap-x-8 gap-y-2 sm:gap-y-3 mb-8 sm:mb-10 md:mb-16">
           {categories.map((cat, idx) => (
             <Link 
               key={idx} 
               href="#" 
-              className="text-[13px] sm:text-[15px] text-[#333] font-medium hover:text-[#00c3ff] transition-colors whitespace-nowrap"
+              className="text-[12px] sm:text-[15px] text-[#333] font-medium hover:text-[#00c3ff] transition-colors whitespace-nowrap"
             >
               {cat}
             </Link>
@@ -117,7 +117,7 @@ export default function BlogPage() {
               </Link>
 
               {/* Card Content */}
-              <div className="p-6 sm:p-7 flex flex-col flex-grow">
+              <div className="p-5 sm:p-6 md:p-7 flex flex-col flex-grow">
                 
                 {/* Title */}
                 <Link href={post.link} className="block group-hover:text-[#00c3ff] transition-colors mb-4">
