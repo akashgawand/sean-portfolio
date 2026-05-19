@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Testimonials",
+  description:
+    "Hear from entrepreneurs, investors, and business leaders who have worked with Sean Beaman.",
+  openGraph: {
+    url: "https://www.seanbeaman.com/testimonials",
+  },
+};
 
 export default function TestimonialsPage() {
   return (
