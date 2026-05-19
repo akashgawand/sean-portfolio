@@ -8,7 +8,7 @@ export default function AmbitiousOnes() {
       description:
         "Access advanced, AI-driven algorithmic trading to preserve capital and grow your wealth autonomously.",
       image:
-        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2940&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2940&auto=format&fit=crop",
     },
     {
       title: "Tech Innovators",
@@ -17,13 +17,13 @@ export default function AmbitiousOnes() {
       image:
         "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2940&auto=format&fit=crop",
     },
-    {
-      title: "Real Estate Developers",
-      description:
-        "Generate massive returns through strategic property development, flipping, and systematic portfolio management.",
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop",
-    },
+    // {
+    //   title: "Real Estate Developers",
+    //   description:
+    //     "Generate massive returns through strategic property development, flipping, and systematic portfolio management.",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop",
+    // },
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function AmbitiousOnes() {
         </p>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 w-full max-w-3xl mx-auto">
           {cards.map((card, index) => (
             <div
               key={index}
@@ -56,7 +56,7 @@ export default function AmbitiousOnes() {
                 src={card.image}
                 alt={card.title}
                 fill
-                sizes="(max-width: 768px) 100vw, 33vw"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
               />
               {/* Gradient Overlay */}
