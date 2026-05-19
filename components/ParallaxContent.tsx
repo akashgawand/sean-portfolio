@@ -41,14 +41,17 @@ export default function ParallaxContent() {
           <div className="relative w-full z-0 bg-black">
             {/* Sticky Background */}
             <div className="sticky top-0 h-screen w-full overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent z-10" />
+              {/* Desktop: heavy left-to-right darkening so card text pops */}
+              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent z-10 hidden md:block" />
+              {/* Mobile: bottom-up darkening keeps card readable while the image shows at top */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20 z-10 md:hidden" />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30 z-10" />
               <Image
                 src="/seanbeamanNew2.png"
                 alt="Family Background"
                 fill
                 sizes="100vw"
-                className="object-cover object-center transform scale-105"
+                className="object-cover object-right-top md:object-center transform scale-105"
                 priority
               />
             </div>
