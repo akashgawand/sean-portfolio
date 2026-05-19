@@ -22,6 +22,7 @@ export default function ParallaxContent() {
             src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1000&auto=format&fit=crop"
             alt="Whiteboard session"
             fill
+            sizes="100vw"
             className="object-cover h-full object-center opacity-60 transition-transform duration-1000 group-hover:scale-105"
             priority
           />
@@ -46,6 +47,7 @@ export default function ParallaxContent() {
                 src="/seanbeamanNew2.png"
                 alt="Family Background"
                 fill
+                sizes="100vw"
                 className="object-cover object-center transform scale-105"
                 priority
               />
@@ -54,14 +56,14 @@ export default function ParallaxContent() {
             {/* Scrolling Content Container */}
             <div className="relative z-10 w-full -mt-[100vh]">
               {/* YOUR EXACT CONTENT BLOCK */}
-              <section className="min-h-screen max-w-7xl mx-auto px-6 lg:px-12 flex flex-col justify-center py-20">
+              <section className="min-h-screen max-w-7xl mx-auto px-6 lg:px-12 flex flex-col justify-center py-16 sm:py-20">
                 {/* Premium Glassmorphism Content Box */}
-                <div className="max-w-2xl bg-black/30 p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl transform transition-transform hover:scale-[1.01] duration-500">
-                  <h2 className="text-5xl md:text-7xl font-extrabold mb-8 uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
+                <div className="max-w-2xl bg-black/30 p-6 sm:p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl transform transition-transform hover:scale-[1.01] duration-500">
+                  <h2 className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-6 sm:mb-8 uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
                     Sean Beaman
                   </h2>
 
-                  <div className="space-y-6 text-lg md:text-xl text-gray-300 font-light leading-relaxed">
+                  <div className="space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl text-gray-300 font-light leading-relaxed">
                     <p>
                       Sean Beaman is a veteran entrepreneur, investor, and the
                       current CEO of Gemalgo, a financial technology company
@@ -69,7 +71,7 @@ export default function ParallaxContent() {
                     </p>
 
                     {/* Emphasized Quote Block */}
-                    <p className="font-semibold text-white text-xl border-l-4 border-[#0ea5e9] pl-5 py-1 drop-shadow-md">
+                    <p className="font-semibold text-white text-lg sm:text-xl border-l-4 border-[#0ea5e9] pl-4 sm:pl-5 py-1 drop-shadow-md">
                       With a career spanning over 30 years, Beaman has a proven
                       track record of building, scaling, and selling companies
                       across the technology, finance, and data sectors.
@@ -86,7 +88,10 @@ export default function ParallaxContent() {
                   </div>
 
                   {/* Upgraded CTA Button */}
-                  <button className="mt-10 group flex items-center gap-3 bg-white text-black font-extrabold px-10 py-4 rounded-full hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]">
+                  <button
+                    type="button"
+                    className="mt-8 sm:mt-10 group flex items-center gap-3 bg-white text-black font-extrabold px-8 sm:px-10 py-3 sm:py-4 rounded-full hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] text-sm sm:text-base"
+                  >
                     View Full Profile
                     <svg
                       className="w-5 h-5 group-hover:translate-x-1 transition-transform"
@@ -108,15 +113,15 @@ export default function ParallaxContent() {
           </div>
 
           {/* --- SECTION B: NEWSLETTER TEXT (Scrolls over image right after A) --- */}
-          <section className="min-h-screen max-w-7xl mx-auto px-6 lg:px-12 flex flex-col justify-center pb-24">
+          <section className="min-h-screen max-w-7xl mx-auto px-6 lg:px-12 flex flex-col justify-center pb-16 sm:pb-24">
             <div className="max-w-xl">
-              <p className="text-[#0ea5e9] font-bold tracking-wider text-sm uppercase drop-shadow-md">
+              <p className="text-[#0ea5e9] font-bold tracking-wider text-xs sm:text-sm uppercase drop-shadow-md">
                 Major Business Ventures
               </p>
-              <h3 className="text-4xl md:text-6xl font-bold uppercase leading-tight mt-2 mb-4 drop-shadow-lg">
+              <h3 className="text-3xl sm:text-4xl md:text-6xl font-bold uppercase leading-tight mt-2 mb-4 drop-shadow-lg">
                 Over $250M <span className="text-gray-400">In Exits</span>
               </h3>
-              <ul className="text-gray-300 text-lg mb-6 drop-shadow-md space-y-2 list-disc list-inside">
+              <ul className="text-gray-300 text-base sm:text-lg mb-6 drop-shadow-md space-y-2 list-disc list-inside">
                 <li>
                   <strong className="text-white">
                     Suncoast Research Labs:
@@ -142,7 +147,10 @@ export default function ParallaxContent() {
                   million through strategic development.
                 </li>
               </ul>
-              <button className="bg-white text-black font-semibold px-8 py-4 rounded-full hover:scale-105 transition-transform duration-300 shadow-xl">
+              <button
+                type="button"
+                className="bg-white text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:scale-105 transition-transform duration-300 shadow-xl text-sm sm:text-base"
+              >
                 View Portfolio
               </button>
             </div>
@@ -150,7 +158,7 @@ export default function ParallaxContent() {
 
           {/* --- SECTION C: BOOK SECTION (Solid Black "Curtain" slides up over everything) --- */}
           {/* 2. BOOK SECTION (Forced under 80vh) */}
-          <section className="relative z-20 w-full flex items-center bg-black overflow-hidden group h-[80vh] max-h-[800px] ">
+          <section className="relative z-20 w-full flex items-center bg-black overflow-hidden group py-16 md:py-0 md:h-[80vh] md:max-h-[800px]">
             <div className="w-full max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-16 items-center">
               {/* Text Side */}
               <div className="relative z-20 flex flex-col gap-4 lg:gap-6 w-full">
@@ -177,7 +185,10 @@ export default function ParallaxContent() {
                   number one rule of investing: preserve capital first. This
                   necessity birthed Gemalgo.
                 </p>
-                <button className="self-start mt-4 bg-white text-black font-semibold px-6 py-3 lg:px-8 lg:py-4 rounded-full hover:scale-105 transition-transform duration-300">
+                <button
+                  type="button"
+                  className="self-start mt-4 bg-white text-black font-semibold px-6 py-3 lg:px-8 lg:py-4 rounded-full hover:scale-105 transition-transform duration-300 text-sm sm:text-base"
+                >
                   Explore Gemalgo
                 </button>
               </div>
@@ -339,6 +350,7 @@ export default function ParallaxContent() {
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2000&auto=format&fit=crop"
             alt="Kings Club Background"
             fill
+            sizes="100vw"
             className="object-cover h-full object-top opacity-70 transition-transform duration-1000 group-hover:scale-105"
           />
         </div>
@@ -346,15 +358,15 @@ export default function ParallaxContent() {
         {/* Scrolling Content Wrapper */}
         <div className="relative z-10 w-full -mt-[100vh]">
           {/* 3. KINGS CLUB CONTENT (Takes up exactly 1 screen height) */}
-          <section className="min-h-[80vh] max-w-7xl mx-auto px-6 lg:px-12 flex flex-col justify-center pb-24">
+          <section className="min-h-[80vh] max-w-7xl mx-auto px-6 lg:px-12 flex flex-col justify-center py-16 sm:py-20 lg:pb-24">
             <div className="max-w-xl">
-              <p className="text-[#0ea5e9] font-bold tracking-wider text-sm uppercase">
+              <p className="text-[#0ea5e9] font-bold tracking-wider text-xs sm:text-sm uppercase">
                 Gemalgo&apos;s Mission
               </p>
-              <h3 className="text-4xl md:text-6xl font-bold uppercase leading-tight mt-2 mb-4">
+              <h3 className="text-3xl sm:text-4xl md:text-6xl font-bold uppercase leading-tight mt-2 mb-4">
                 Democratizing Wealth
               </h3>
-              <p className="text-gray-300 text-lg mb-6 drop-shadow-md">
+              <p className="text-gray-300 text-base sm:text-lg mb-6 drop-shadow-md">
                 <span className="font-bold text-white">
                   Leveling the playing field.
                 </span>{" "}
@@ -363,43 +375,50 @@ export default function ParallaxContent() {
                 behind the steep fees of hedge funds and institutional
                 investors.
               </p>
-              <button className="bg-white text-black font-semibold px-8 py-4 rounded-full hover:scale-105 transition-transform duration-300">
+              <button
+                type="button"
+                className="bg-white text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:scale-105 transition-transform duration-300 text-sm sm:text-base"
+              >
                 Learn More
               </button>
             </div>
           </section>
 
           {/* 4. MARTELL VENTURES SECTION (Slides directly over the sticky background) */}
-          <section className="relative w-full h-[500px] flex items-center overflow-hidden bg-black  group">
+          <section className="relative w-full min-h-[500px] md:h-[500px] py-16 md:py-0 flex items-center overflow-hidden bg-black group">
             <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-black/10 z-10" />
             <Image
               src="https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=2000&auto=format&fit=crop"
               alt="Martell Ventures Background"
               fill
-              className="object-cover object-center opacity-70 "
+              sizes="100vw"
+              className="object-cover object-center opacity-70"
             />
             <div className="relative z-20 w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-6 justify-center h-full">
               <div className="max-w-xl">
-                <p className="text-[#0ea5e9] font-bold tracking-wider text-sm uppercase">
+                <p className="text-[#0ea5e9] font-bold tracking-wider text-xs sm:text-sm uppercase">
                   The Technology & Security
                 </p>
-                <h3 className="text-4xl md:text-6xl font-bold uppercase leading-tight mt-2 mb-4">
+                <h3 className="text-3xl sm:text-4xl md:text-6xl font-bold uppercase leading-tight mt-2 mb-4">
                   Autonomous Trading
                 </h3>
-                <p className="text-gray-300 text-lg mb-4">
+                <p className="text-gray-300 text-base sm:text-lg mb-4">
                   <span className="font-bold text-white">
                     Gemalgo is an AI-driven trading platform
                   </span>{" "}
                   that analyzes market conditions in real-time, predicts trends,
                   and executes trades autonomously 24/7.
                 </p>
-                <p className="text-gray-300 text-lg mb-6">
+                <p className="text-gray-300 text-base sm:text-lg mb-6">
                   Reflecting Beaman&apos;s strict rules on capital preservation,
                   retail investors retain full ownership of their capital in
                   their personal brokerage accounts, while Gemalgo automates
                   execution.
                 </p>
-                <button className="bg-white text-black font-semibold px-8 py-4 rounded-full hover:scale-105 transition-transform duration-300">
+                <button
+                  type="button"
+                  className="bg-white text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:scale-105 transition-transform duration-300 text-sm sm:text-base"
+                >
                   See How It Works
                 </button>
               </div>

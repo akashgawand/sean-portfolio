@@ -28,7 +28,7 @@ export default function AmbitiousOnes() {
 
   return (
     <section
-      className="w-full py-24 md:py-32 relative"
+      className="w-full py-20 sm:py-24 md:py-32 relative"
       style={{
         background: "linear-gradient(rgb(0, 54, 83) 0%, rgb(0, 0, 0) 100%)",
       }}
@@ -38,15 +38,15 @@ export default function AmbitiousOnes() {
       <div className="absolute inset-0 bg-[linear-gradient(to_bottom,_transparent_0%,_rgba(0,0,0,0.8)_50%,_transparent_100%)] pointer-events-none" />{" "}
       <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-center">
         {/* Header Section */}
-        <h2 className="text-5xl md:text-7xl font-bold text-white uppercase tracking-wider mb-4 text-center">
+        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white uppercase tracking-wider mb-3 sm:mb-4 text-center leading-tight">
           FOR THE SYSTEMATIC BUILDERS...
         </h2>
-        <p className="text-[#00c3ff] font-bold text-lg md:text-xl tracking-tight mb-16 text-center">
+        <p className="text-[#00c3ff] font-bold text-base sm:text-lg md:text-xl tracking-tight mb-12 sm:mb-16 text-center">
           ...who prioritize capital preservation and aggressive scaling.
         </p>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 w-full">
           {cards.map((card, index) => (
             <div
               key={index}
@@ -56,29 +56,33 @@ export default function AmbitiousOnes() {
                 src={card.image}
                 alt={card.title}
                 fill
+                sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
               />
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-linear-to-t from-black via-black/50 to-transparent" />
 
               {/* Content */}
-              <div className="absolute inset-0 p-8 flex flex-col justify-between">
+              <div className="absolute inset-0 p-6 sm:p-8 flex flex-col justify-between">
                 {/* Top: Icon and Title */}
                 <div>
-                  <div className="w-10 h-10 rounded-full bg-black/50  flex items-center justify-center mb-6">
+                  <div className="w-10 h-10 rounded-full bg-black/50 flex items-center justify-center mb-4 sm:mb-6">
                     <ArrowUpRight className="text-[#00c3ff] w-5 h-5" />
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-white pr-8 leading-tight">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white pr-6 sm:pr-8 leading-tight">
                     {card.title}
                   </h3>
                 </div>
 
                 {/* Bottom: Description and Button */}
                 <div>
-                  <p className="text-white text-lg font-bold leading-snug mb-6">
+                  <p className="text-white text-base sm:text-lg font-bold leading-snug mb-4 sm:mb-6">
                     {card.description}
                   </p>
-                  <button className="bg-white text-black font-bold px-6 py-2.5 rounded-full text-sm hover:scale-105 transition-transform">
+                  <button
+                    type="button"
+                    className="bg-white text-black font-bold px-5 sm:px-6 py-2.5 rounded-full text-sm hover:scale-105 transition-transform"
+                  >
                     Learn More
                   </button>
                 </div>

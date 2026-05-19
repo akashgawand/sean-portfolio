@@ -73,7 +73,6 @@ export default function Navbar() {
       <button
         type="button"
         aria-label={isOpen ? "Close menu" : "Open menu"}
-        aria-expanded={isOpen ? "true" : "false"}
         onClick={() => setIsOpen((v) => !v)}
         className="lg:hidden relative z-110 text-white p-2 -mr-2 cursor-pointer"
       >
@@ -157,7 +156,7 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="block text-white font-extrabold uppercase tracking-tight text-3xl py-3 border-b border-white/10 hover:text-[#00c3ff] transition-colors"
+                      className="block text-white font-extrabold uppercase tracking-tight text-2xl py-2.5 border-b border-white/10 hover:text-[#00c3ff] transition-colors"
                     >
                       {link.label}
                     </Link>

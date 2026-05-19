@@ -26,7 +26,7 @@ const images = [
 
 export default function Gallary() {
   return (
-    <section className="relative w-full min-h-[80vh] py-20 bg-background flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-[80vh] py-16 sm:py-20 bg-background flex flex-col items-center justify-center overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 w-full h-full flex flex-col">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,16 +35,16 @@ export default function Gallary() {
           viewport={{ once: true }}
           className="mb-8 md:mb-12 text-center"
         >
-          <h2 className="text-4xl md:text-6xl font-bold font-bebas tracking-wider uppercase mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold font-bebas tracking-wider uppercase mb-3 sm:mb-4">
             Gallery
           </h2>
-          <p className="max-w-2xl mx-auto text-muted-foreground font-roboto text-lg space-y-2">
+          <p className="max-w-2xl mx-auto text-muted-foreground font-roboto text-base sm:text-lg space-y-2 px-2">
             Moments, milestones, and the ambition that drives the vision
             forward.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto grow w-full h-full min-h-[50vh]">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-6xl mx-auto grow w-full h-full min-h-[50vh]">
           {images.map((img, index) => (
             <motion.div
               key={index}
@@ -56,7 +56,7 @@ export default function Gallary() {
                 ease: "easeOut",
               }}
               viewport={{ once: true, margin: "-50px" }} // Triggers slightly before scrolling into view
-              className="relative overflow-hidden group w-full h-full min-h-[200px] md:min-h-[300px]" // Removed rounded-xl here
+              className="relative overflow-hidden group w-full h-full min-h-[180px] sm:min-h-[200px] md:min-h-[300px]" // Removed rounded-xl here
             >
               {/* Slightly darker initial overlay to make the hover reveal pop more */}
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
