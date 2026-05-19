@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Work With Sean Beaman",
+  description:
+    "Ready to scale? Connect with Sean Beaman to explore partnerships, advisory, and growth opportunities.",
+  openGraph: {
+    url: "https://www.seanbeaman.com/message",
+  },
+};
 
 export default function MessagePage() {
   return (

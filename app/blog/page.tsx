@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Founder Insights & Blog",
+  description:
+    "Actionable insights on AI, fintech, startups, capital preservation, and scaling from veteran entrepreneur Sean Beaman.",
+  openGraph: {
+    url: "https://www.seanbeaman.com/blog",
+  },
+};
 
 export default function BlogPage() {
   const categories = [

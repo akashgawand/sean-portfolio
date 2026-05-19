@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "About Sean Beaman",
+  description:
+    "The story behind 30 years of systematic scaling, $250M+ in exits, and the creation of Gemalgo — from startup founder to fintech CEO.",
+  openGraph: {
+    url: "https://www.seanbeaman.com/about",
+  },
+};
 
 export default function AboutPage() {
   return (
